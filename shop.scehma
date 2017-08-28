@@ -1,0 +1,66 @@
+商城node.js + koa
+UI界面 vue FE
+VUE web框架  后端
+
+数据库 DBA
+schema 具像化 
+http://mygardensite.org/products/4c4b1476238d3b4dd5003981 
+koa route 一切皆资源
+关系型数据库
+NOSQL json文档类型数据库 mongodb
+good
+{
+    _id: ObjectId("4c4b1476238d3b4dd5003981"),
+    name: 'whellbarrow-9092',
+    slug: 'whellbarrow-9092',
+    sku: '9092',
+    description: 'Heavy duty whellbarrow'
+}
+details: {
+    weight: 47,
+    weight_units: "lbs",
+    model_num: 4039283402,
+    manufacturer: "Acme"
+    color: "green"
+},
+total_reviews: 4,
+average_review: 4.5,
+pricing: {
+    retial: 589700,
+    sale: 489700
+},
+//818i新的价格，它的有效期就在那一天
+price_history; {
+    sale: 429700,
+    retail: 529700,
+    start: new Date(2017,8,18, 00:00:00),
+    end:new Date(2017,8,18, 23:59:59)
+},
+primary_category:ObjectId("6a5b1476238d3b4dd5000048"),
+category_ids: [
+    ObjectId("6a5b1476238d3b4dd5000048"),
+    ObjectId("6a5b1476238d3b4dd5000048")
+]
+tags: ["tools", "gardening", "soil"];
+
+下单
+{
+    _id: ObjectId(),
+    user_id:ObjectId(),
+    state: "CART|PAYED|ARRIVED|CLOSED",
+    line-items: [
+        {
+            _id: ObjectId(),
+            details: {
+                color:'red',
+                storage:'64g'
+            },
+            查询的效率
+            quantity: 1,
+            pricing: {
+                retail:5897,
+                sale: 4897
+            }
+        }
+    ]
+}
